@@ -20,3 +20,7 @@ def index(request):
 
 def health(request):
     return HttpResponse(PageView.objects.count())
+
+
+def searchflight(request):
+    return HttpResponse("flight results")
