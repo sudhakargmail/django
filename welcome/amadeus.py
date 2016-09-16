@@ -13,8 +13,8 @@ import requests
 import logging
 from django.contrib.humanize.templatetags.humanize import naturalday
 from django.utils import dateparse
-from imgix_url_helper import ImagixUrlHelper
-from airports import AIRPORTS
+from .imgix_url_helper import ImagixUrlHelper
+from .airports import AIRPORTS
 
 LOGGER = logging.getLogger(__name__)
 

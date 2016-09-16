@@ -3,9 +3,9 @@ Created on Sep 15, 2016
 
 @author: Sudhakar
 '''
-from enums import MessagingProviders
-from amadeus import flights_low_fare_search, amadeus_results_to_facebook
-from expedia import get_ean_tags_from_webhook_input, expedia_search_request_to_facebook
+from .enums import MessagingProviders
+from .amadeus import flights_low_fare_search, amadeus_results_to_facebook
+from .expedia import get_ean_tags_from_webhook_input, expedia_search_request_to_facebook
 
 def get_structured_message(messaging_provider, text=None, image_url=None):
     """ helper function that returns structured response for text and image url """

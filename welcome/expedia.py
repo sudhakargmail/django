@@ -12,7 +12,7 @@ import logging
 from datetime import datetime
 from datetime import timedelta
 from requests.exceptions import ConnectionError
-from enums import SortBy, SortOrder
+from .enums import SortBy, SortOrder
 
 LOGGER = logging.getLogger(__name__)
 
