@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 from . import database
 from .models import PageView
-from main import amadeus_flight_search_webhook
+from . import main
 
 # Create your views here.
 
@@ -24,4 +24,4 @@ def health(request):
 
 
 def searchflight(request):
-    return HttpResponse(amadeus_flight_search_webhook(request.body))
+    return HttpResponse(main.amadeus_flight_search_webhook(request.body))
