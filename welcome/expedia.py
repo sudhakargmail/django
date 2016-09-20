@@ -89,7 +89,7 @@ def expedia_search_request_to_facebook(ean_tags):
     """ expedia search into facebook format """
     try:
         ean_response = run_expedia_request(ean_tags, results_num=10)
-    except ValueError, ConnectionError:
+    except ConnectionError:
         pass # expedia returned not json or connection error
     else:
         expedia_hotels_list = ean_response.get('HotelListResponse',{}).get('HotelList', {}).get('HotelSummary', [])
