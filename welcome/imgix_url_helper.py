@@ -3,7 +3,7 @@
 import hashlib
 from base64 import urlsafe_b64encode
 from urllib.parse import urlparse
-from urllib import quote
+from urllib.parse import quote
 
 
 
