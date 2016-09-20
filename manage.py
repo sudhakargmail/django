@@ -2,7 +2,6 @@
 import os
 import sys
 
-print sys.path
 
 if __name__ == "__main__":
 
