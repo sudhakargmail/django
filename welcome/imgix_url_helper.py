@@ -2,7 +2,7 @@
 
 import hashlib
 from base64 import urlsafe_b64encode
-import urlparse
+from urllib.parse import urlparse
 from urllib import quote
 
 
