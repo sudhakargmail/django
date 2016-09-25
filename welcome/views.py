@@ -24,6 +24,6 @@ def health(request):
 
 
 def searchflight(request):
-    response = "{response=Your query is submitted successfully.}"
+    response = "{'response' : 'Your query is submitted successfully.'}"
     return HttpResponse(response)
     #return HttpResponse(main.amadeus_flight_search_webhook(request.body))
