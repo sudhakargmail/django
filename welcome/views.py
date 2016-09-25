@@ -24,6 +24,6 @@ def health(request):
 
 
 def searchflight(request):
-    response = "{'response' : 'Your query is submitted successfully.'}"
+    response = "{  "botkitVersion": "0.4.0",  "messages": [ { "_type": "TextMessage", "text": "Hello" } ] }"
     return HttpResponse(response)
     #return HttpResponse(main.amadeus_flight_search_webhook(request.body))
